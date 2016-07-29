@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmftool:ToolRegistry
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition">
+  <palette
+      title="Palette (Gcore)"
+      description="Die Modellelemente der Gcore-Ebene">
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="Graphic Elements"
+        description="Die graphischen Elemente der Gcore-Ebene"
+        collapsible="true">
+      <smallIcon
+          xsi:type="gmftool:BundleImage"
+          path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj16/graphic_elements_group.png"/>
+      <largeIcon
+          xsi:type="gmftool:BundleImage"
+          path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj32/graphic_elements_group.png"/>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="PageContainer"
+          description="Create page container.">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj16/container.png"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj32/container.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="EditPage"
+          description="Create new EditPage">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj16/page.png"
+            bundle=""/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj32/page.png"
+            bundle=""/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ListPage"
+          description="Create new ListPage">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj16/page.png"
+            bundle=""/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj32/page.png"
+            bundle=""/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ELearningPage"
+          description="Create new ELearningPage">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj16/page.png"
+            bundle=""/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj32/page.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ViewPage"
+          description="Create new ViewPage">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj16/page.png"
+            bundle=""/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj32/page.png"
+            bundle=""/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="CustomPage"
+          description="Create new CustomPage">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj16/page.png"
+            bundle=""/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj32/page.png"
+            bundle=""/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="LoginPage"
+          description="Create new LoginPage">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj16/page.png"
+            bundle=""/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj32/page.png"
+            bundle=""/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ProcessSelectorPage"
+          description="Create new ProcessSelectorPage">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj16/page.png"
+            bundle=""/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj32/page.png"
+            bundle=""/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="SelectableListPage"
+          description="Create new SelectableListPage">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj16/page.png"
+            bundle=""/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj32/page.png"
+            bundle=""/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="TakePicturePage"
+          description="Create new TakePicturePage">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj16/page.png"
+            bundle=""/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj32/page.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="RecordAudioPage"
+          description="Create new RecordAudioPage">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj16/page.png"
+            bundle=""/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj32/page.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ARPage"
+          description="Create new ARPage">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj16/page.png"
+            bundle=""/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj32/page.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="MapPage"
+          description="Create new MapPage">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj16/page.png"
+            bundle=""/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj32/page.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="MediaPage"
+          description="Create new MediaPage">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj16/page.png"
+            bundle=""/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj32/page.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Menu"
+          description="Create new Menu">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj16/menu.png"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj32/menu.png"/>
+      </tools>
+    </tools>
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="Settings"
+        description="Die Settings der Gcore-Ebene"
+        collapsible="true">
+      <smallIcon
+          xsi:type="gmftool:BundleImage"
+          path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj16/settings_group.png"/>
+      <largeIcon
+          xsi:type="gmftool:BundleImage"
+          path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj32/settings_group.png"/>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="StyleSetting"
+          description="Create new StyleSetting">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj16/style_settings.png"
+            bundle=""/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj32/style_settings.png"
+            bundle=""/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="RGBColor"
+          description="Create new RGBColor">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj16/rgb_color.png"
+            bundle=""/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj32/rgb_color.png"
+            bundle=""/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="StyleListSettings"
+          description="Create new StyleListSettings">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj16/list_settings.png"
+            bundle=""/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj32/list_settings.png"
+            bundle=""/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="StyleMenuSettings"
+          description="Create new StyleMenuSettings">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj16/menu_settings.png"
+            bundle=""/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj32/menu_settings.png"
+            bundle=""/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="StyleSelectionSettings"
+          description="Create new StyleSelectionSettings">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj16/selection_settings.png"
+            bundle=""/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj32/selection_settings.png"
+            bundle=""/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="StylePageSettings"
+          description="Create new StylePageSettings">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj16/page_settings.png"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.gcore.diagram/icons/obj32/page_settings.png"/>
+      </tools>
+    </tools>
+  </palette>
+</gmftool:ToolRegistry>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmftool:ToolRegistry
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition">
+  <palette
+      title="Palette (Wcore)"
+      description="Die Modellelemente der Wcore-Ebene">
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="Processes"
+        description=""
+        collapsible="true">
+      <smallIcon
+          xsi:type="gmftool:BundleImage"
+          path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj16/processes_and_tasks.png"
+          bundle=""/>
+      <largeIcon
+          xsi:type="gmftool:BundleImage"
+          path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj32/processes_and_tasks.png"/>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ProcessContainer"
+          description="Create process container.">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj16/container.png"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj32/container.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Process"
+          description="Create new Process">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj16/process.gif"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj32/process.gif"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Variable"
+          description="Create new Variable">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj16/Variable.gif"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj32/Variable.gif"/>
+      </tools>
+    </tools>
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="Tasks"
+        collapsible="true">
+      <smallIcon
+          xsi:type="gmftool:BundleImage"
+          path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj16/processes_and_tasks.png"/>
+      <largeIcon
+          xsi:type="gmftool:BundleImage"
+          path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj32/processes_and_tasks.png"/>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Create"
+          description="Create new Create">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj16/create.gif"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj32/create.gif"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="InvokeOperation"
+          description="Create new InvokeOperation">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj16/invoke_operation.gif"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj32/invoke_operation.gif"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="InvokeProcess"
+          description="Create new InvokeProcess">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj16/invoke_process.png"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj32/invoke_process.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="InvokeGUI"
+          description="Create new InvokeGUI">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj16/invoke_gui.png"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj32/invoke_gui.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Permission"
+          description="Create new Permission">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj16/permission.gif"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj32/permission.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Delete"
+          description="Create new Delete">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj16/delete.gif"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj32/delete.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Read"
+          description="Create new Read">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj16/read.gif"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj32/read.gif"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ProcessSelector"
+          description="Create new ProcessSelector">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj16/process_selector.png"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj32/process_selector.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="CrudGui"
+          description="Create new CrudGui">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj16/CrudGui.png"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj32/CrudGui.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Assign"
+          description="Create new Assign">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj16/CrudGui.png"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj32/CrudGui.png"/>
+      </tools>
+    </tools>
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="Controls"
+        collapsible="true">
+      <smallIcon
+          xsi:type="gmftool:BundleImage"
+          path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj16/processes_and_tasks.png"/>
+      <largeIcon
+          xsi:type="gmftool:BundleImage"
+          path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj32/processes_and_tasks.png"/>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="If"
+          description="Create new If">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj16/if.png"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj32/if.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="IfElse"
+          description="Create new IfElse">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj16/if_else.png"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj32/if_else.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="While"
+          description="Create new While">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj16/while.png"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj32/while.png"/>
+      </tools>
+    </tools>
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="Transitions"
+        collapsible="true">
+      <smallIcon
+          xsi:type="gmftool:BundleImage"
+          path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj16/processes_and_tasks.png"/>
+      <largeIcon
+          xsi:type="gmftool:BundleImage"
+          path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj32/processes_and_tasks.png"/>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Sequence (True)"
+          description="Create a regular path">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj16/sequence.gif"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj32/sequence.gif"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Branch (False)"
+          description="Create an alternative path">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj16/sequence.gif"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="platform:/plugin/pimar.editor.visual.wcoreExtended.diagram/icons/obj32/sequence.gif"
+            bundle=""/>
+      </tools>
+    </tools>
+  </palette>
+</gmftool:ToolRegistry>

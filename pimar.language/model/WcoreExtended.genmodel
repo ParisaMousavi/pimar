@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/pimar.language/src" modelPluginID="pimar.language"
+    modelName="WcoreExtended" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0" copyrightFields="false"
+    usedGenPackages="../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore Gcore.genmodel#//gcore Wcore.genmodel#//wcore"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>WcoreExtended.ecore</foreignModel>
+  <genPackages prefix="WcoreExtended" disposableProviderFactory="true" ecorePackage="WcoreExtended.ecore#/">
+    <genClasses ecoreClass="WcoreExtended.ecore#//ProcessContainer"/>
+    <genClasses ecoreClass="WcoreExtended.ecore#//Process">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WcoreExtended.ecore#//Process/RefsTrue"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WcoreExtended.ecore#//Process/RefsFalse"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WcoreExtended.ecore#//Process/allTasks"/>
+    </genClasses>
+    <genClasses ecoreClass="WcoreExtended.ecore#//If1">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WcoreExtended.ecore#//If1/Condition"/>
+    </genClasses>
+    <genClasses ecoreClass="WcoreExtended.ecore#//IfElse1">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WcoreExtended.ecore#//IfElse1/Condition"/>
+    </genClasses>
+    <genClasses ecoreClass="WcoreExtended.ecore#//While1">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WcoreExtended.ecore#//While1/Condition"/>
+    </genClasses>
+    <genClasses ecoreClass="WcoreExtended.ecore#//RefTrue">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreExtended.ecore#//RefTrue/pre"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreExtended.ecore#//RefTrue/suc"/>
+    </genClasses>
+    <genClasses ecoreClass="WcoreExtended.ecore#//RefFalse">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreExtended.ecore#//RefFalse/pre"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreExtended.ecore#//RefFalse/suc"/>
+    </genClasses>
+    <genClasses ecoreClass="WcoreExtended.ecore#//ConditionalNode"/>
+    <genClasses ecoreClass="WcoreExtended.ecore#//Assign1">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WcoreExtended.ecore#//Assign1/rhs"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreExtended.ecore#//Assign1/lhs"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

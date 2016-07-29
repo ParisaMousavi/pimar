@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated WcoreExtended -->
+      <package
+            uri="http://www.eclipse.org/emf/2002/WcoreExtended"
+            class="wcoreExtended.WcoreExtendedPackage"
+            genModel="model/WcoreExtended.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated GenModel -->
+      <package
+            uri="http://www.eclipse.org/emf/2002/Wcore"
+            class="wcore.WcorePackage"
+            genModel="model/Wcore.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated GenModel -->
+      <package
+            uri="http://www.eclipse.org/emf/2002/Gcore"
+            class="gcore.GcorePackage"
+            genModel="model/Gcore.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated GcoreExtended -->
+      <package
+            uri="http://www.eclipse.org/emf/2002/GcoreExtended"
+            class="gcoreExtended.GcoreExtendedPackage"
+            genModel="model/GcoreExtended.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated WcoreDatabase -->
+      <package
+            uri="http://www.eclipse.org/emf/2002/WcoreDatabase"
+            class="wcoreDatabase.WcoreDatabasePackage"
+            genModel="model/WcoreDatabase.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated GcoreDatabase -->
+      <package
+            uri="http://www.eclipse.org/emf/2002/GcoreDatabase"
+            class="gcoreDatabase.GcoreDatabasePackage"
+            genModel="model/GcoreDatabase.genmodel"/>
+   </extension>
+
+</plugin>

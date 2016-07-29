@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trace:TraceModel
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:trace="http://www.eclipse.org/gmf/2006/Trace">
+  <nodeTraces
+      visualID="2002"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Process') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'ProcessContainer') and _containmentMF_.name = 'processes')">
+    <nodeLabelTraces
+        visualID="5060"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7019"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7020"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7021"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2003"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'ProcessContainer') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Ecore' and _eClass_.name = 'EPackage') and _containmentMF_.name = 'eSubpackages')">
+    <nodeLabelTraces
+        visualID="5120"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7023"
+        queryText="true"/>
+  </nodeTraces>
+  <childNodeTraces
+      visualID="3002"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'InvokeOperation') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Process') and _containmentMF_.name = 'allTasks')">
+    <nodeLabelTraces
+        visualID="5002"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5003"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5004"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5005"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5006"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7005"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3003"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Permission') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Task') and _containmentMF_.name = 'permissions')">
+    <nodeLabelTraces
+        visualID="5121"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3004"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'InvokeProcess') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Process') and _containmentMF_.name = 'allTasks')">
+    <nodeLabelTraces
+        visualID="5008"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5009"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5010"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5011"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7006"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3005"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Permission') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Task') and _containmentMF_.name = 'permissions')">
+    <nodeLabelTraces
+        visualID="5007"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3006"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'InvokeGUI') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Process') and _containmentMF_.name = 'allTasks')">
+    <nodeLabelTraces
+        visualID="5013"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5014"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5015"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5016"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7007"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3007"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Permission') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Task') and _containmentMF_.name = 'permissions')">
+    <nodeLabelTraces
+        visualID="5012"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3008"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Read') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Process') and _containmentMF_.name = 'allTasks')">
+    <nodeLabelTraces
+        visualID="5018"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5019"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5020"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7008"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3009"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Permission') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Task') and _containmentMF_.name = 'permissions')">
+    <nodeLabelTraces
+        visualID="5017"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3010"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'ProcessSelector') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Process') and _containmentMF_.name = 'allTasks')">
+    <nodeLabelTraces
+        visualID="5022"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5023"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5024"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7009"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3011"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Permission') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Task') and _containmentMF_.name = 'permissions')">
+    <nodeLabelTraces
+        visualID="5021"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3012"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Delete') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Process') and _containmentMF_.name = 'allTasks')">
+    <nodeLabelTraces
+        visualID="5026"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5027"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7010"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3013"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Permission') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Task') and _containmentMF_.name = 'permissions')">
+    <nodeLabelTraces
+        visualID="5025"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3015"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Permission') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Task') and _containmentMF_.name = 'permissions')">
+    <nodeLabelTraces
+        visualID="5028"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3016"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Create') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Process') and _containmentMF_.name = 'allTasks')">
+    <nodeLabelTraces
+        visualID="5031"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5032"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5033"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7012"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3017"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Permission') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Task') and _containmentMF_.name = 'permissions')">
+    <nodeLabelTraces
+        visualID="5030"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3022"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'CrudGui') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Process') and _containmentMF_.name = 'allTasks')">
+    <nodeLabelTraces
+        visualID="5037"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5038"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5039"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7014"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3024"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Variable') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Process') and _containmentMF_.name = 'variables')">
+    <nodeLabelTraces
+        visualID="5040"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3025"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Variable') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Process') and _containmentMF_.name = 'return')">
+    <nodeLabelTraces
+        visualID="5041"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3026"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'If1') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Process') and _containmentMF_.name = 'allTasks')">
+    <nodeLabelTraces
+        visualID="5043"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3027"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'IfElse1') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Process') and _containmentMF_.name = 'allTasks')">
+    <nodeLabelTraces
+        visualID="5044"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3028"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'While1') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Process') and _containmentMF_.name = 'allTasks')">
+    <nodeLabelTraces
+        visualID="5045"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3030"
+      queryText="let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Permission'">
+    <nodeLabelTraces
+        visualID="5046"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3031"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Assign1') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Process') and _containmentMF_.name = 'allTasks')">
+    <nodeLabelTraces
+        visualID="5063"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5064"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5065"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7022"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3032"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Process') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'ProcessContainer') and _containmentMF_.name = 'processes')">
+    <nodeLabelTraces
+        visualID="5066"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7024"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7025"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7026"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3033"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'InvokeOperation') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Process') and _containmentMF_.name = 'allTasks')">
+    <nodeLabelTraces
+        visualID="5069"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5070"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5071"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5072"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5073"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7027"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3034"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Permission') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Task') and _containmentMF_.name = 'permissions')">
+    <nodeLabelTraces
+        visualID="5067"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3035"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'InvokeProcess') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Process') and _containmentMF_.name = 'allTasks')">
+    <nodeLabelTraces
+        visualID="5076"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5077"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5078"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5079"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7028"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3036"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Permission') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Task') and _containmentMF_.name = 'permissions')">
+    <nodeLabelTraces
+        visualID="5074"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3037"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'InvokeGUI') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Process') and _containmentMF_.name = 'allTasks')">
+    <nodeLabelTraces
+        visualID="5082"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5083"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5084"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5085"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7029"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3038"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Permission') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Task') and _containmentMF_.name = 'permissions')">
+    <nodeLabelTraces
+        visualID="5080"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3039"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Read') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Process') and _containmentMF_.name = 'allTasks')">
+    <nodeLabelTraces
+        visualID="5088"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5089"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5090"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7030"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3040"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Permission') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Task') and _containmentMF_.name = 'permissions')">
+    <nodeLabelTraces
+        visualID="5086"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3041"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'ProcessSelector') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Process') and _containmentMF_.name = 'allTasks')">
+    <nodeLabelTraces
+        visualID="5093"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5094"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5095"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7031"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3042"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Permission') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Task') and _containmentMF_.name = 'permissions')">
+    <nodeLabelTraces
+        visualID="5091"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3043"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Delete') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Process') and _containmentMF_.name = 'allTasks')">
+    <nodeLabelTraces
+        visualID="5098"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5099"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7032"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3044"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Permission') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Task') and _containmentMF_.name = 'permissions')">
+    <nodeLabelTraces
+        visualID="5096"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3045"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Create') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Process') and _containmentMF_.name = 'allTasks')">
+    <nodeLabelTraces
+        visualID="5102"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5103"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5104"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7033"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3046"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Permission') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Task') and _containmentMF_.name = 'permissions')">
+    <nodeLabelTraces
+        visualID="5100"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3047"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Assign1') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Process') and _containmentMF_.name = 'allTasks')">
+    <nodeLabelTraces
+        visualID="5107"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5108"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5109"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7034"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3048"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Permission') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Task') and _containmentMF_.name = 'permissions')">
+    <nodeLabelTraces
+        visualID="5105"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3049"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'While1') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Process') and _containmentMF_.name = 'allTasks')">
+    <nodeLabelTraces
+        visualID="5110"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3050"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'If1') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Process') and _containmentMF_.name = 'allTasks')">
+    <nodeLabelTraces
+        visualID="5111"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3051"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'IfElse1') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Process') and _containmentMF_.name = 'allTasks')">
+    <nodeLabelTraces
+        visualID="5112"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3052"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'CrudGui') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'Process') and _containmentMF_.name = 'allTasks')">
+    <nodeLabelTraces
+        visualID="5115"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5116"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5117"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7035"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3053"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Permission') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Task') and _containmentMF_.name = 'permissions')">
+    <nodeLabelTraces
+        visualID="5113"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3054"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Variable') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Process') and _containmentMF_.name = 'variables')">
+    <nodeLabelTraces
+        visualID="5118"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3055"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Variable') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/Wcore' and _eClass_.name = 'Process') and _containmentMF_.name = 'return')">
+    <nodeLabelTraces
+        visualID="5119"
+        queryText="true"/>
+  </childNodeTraces>
+  <linkTraces
+      visualID="4010"
+      queryText="modelFacet.oclIsKindOf(gmfgen::TypeLinkModelFacet) and (let _eClass_:ecore::EClass = modelFacet.oclAsType(gmfgen::TypeLinkModelFacet).metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'RefTrue')"/>
+  <linkTraces
+      visualID="4011"
+      queryText="modelFacet.oclIsKindOf(gmfgen::TypeLinkModelFacet) and (let _eClass_:ecore::EClass = modelFacet.oclAsType(gmfgen::TypeLinkModelFacet).metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://www.eclipse.org/emf/2002/WcoreExtended' and _eClass_.name = 'RefFalse')"/>
+</trace:TraceModel>

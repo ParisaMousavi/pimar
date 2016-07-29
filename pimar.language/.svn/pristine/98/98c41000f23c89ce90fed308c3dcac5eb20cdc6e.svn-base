@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/pimar.language/src" modelPluginID="pimar.language"
+    modelName="WcoreDatabase" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0" copyrightFields="false"
+    usedGenPackages="../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore GcoreDatabase.genmodel#//gcoreDatabase"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>WcoreDatabase.ecore</foreignModel>
+  <genPackages prefix="WcoreDatabase" disposableProviderFactory="true" ecorePackage="WcoreDatabase.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="WcoreDatabase.ecore#//Permissions">
+      <genEnumLiterals ecoreEnumLiteral="WcoreDatabase.ecore#//Permissions/INTERNET"/>
+      <genEnumLiterals ecoreEnumLiteral="WcoreDatabase.ecore#//Permissions/FILE_SYSTEM"/>
+      <genEnumLiterals ecoreEnumLiteral="WcoreDatabase.ecore#//Permissions/CALL"/>
+      <genEnumLiterals ecoreEnumLiteral="WcoreDatabase.ecore#//Permissions/ACCESS_FINE_LOCATION"/>
+      <genEnumLiterals ecoreEnumLiteral="WcoreDatabase.ecore#//Permissions/ACCESS_NETWORK_STATE"/>
+      <genEnumLiterals ecoreEnumLiteral="WcoreDatabase.ecore#//Permissions/CAMERA"/>
+      <genEnumLiterals ecoreEnumLiteral="WcoreDatabase.ecore#//Permissions/WRITE_CALENDAR"/>
+      <genEnumLiterals ecoreEnumLiteral="WcoreDatabase.ecore#//Permissions/READ_CALENDAR"/>
+      <genEnumLiterals ecoreEnumLiteral="WcoreDatabase.ecore#//Permissions/MICROPHONE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="WcoreDatabase.ecore#//UnaryOperators">
+      <genEnumLiterals ecoreEnumLiteral="WcoreDatabase.ecore#//UnaryOperators/NOT"/>
+      <genEnumLiterals ecoreEnumLiteral="WcoreDatabase.ecore#//UnaryOperators/HEAD"/>
+      <genEnumLiterals ecoreEnumLiteral="WcoreDatabase.ecore#//UnaryOperators/ID"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="WcoreDatabase.ecore#//BinaryOperators">
+      <genEnumLiterals ecoreEnumLiteral="WcoreDatabase.ecore#//BinaryOperators/AND"/>
+      <genEnumLiterals ecoreEnumLiteral="WcoreDatabase.ecore#//BinaryOperators/CONTAINS"/>
+      <genEnumLiterals ecoreEnumLiteral="WcoreDatabase.ecore#//BinaryOperators/CONCAT"/>
+      <genEnumLiterals ecoreEnumLiteral="WcoreDatabase.ecore#//BinaryOperators/EQUAL"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="WcoreDatabase.ecore#//Privileges">
+      <genEnumLiterals ecoreEnumLiteral="WcoreDatabase.ecore#//Privileges/READ_ONLY"/>
+      <genEnumLiterals ecoreEnumLiteral="WcoreDatabase.ecore#//Privileges/MODIFY"/>
+      <genEnumLiterals ecoreEnumLiteral="WcoreDatabase.ecore#//Privileges/MODIFY_CREATE"/>
+      <genEnumLiterals ecoreEnumLiteral="WcoreDatabase.ecore#//Privileges/ALL"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="WcoreDatabase.ecore#//Scope">
+      <genEnumLiterals ecoreEnumLiteral="WcoreDatabase.ecore#//Scope/LOCAL"/>
+      <genEnumLiterals ecoreEnumLiteral="WcoreDatabase.ecore#//Scope/GLOBAL"/>
+    </genEnums>
+    <genClasses ecoreClass="WcoreDatabase.ecore#//ProcessContainer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//ProcessContainer/processes"/>
+    </genClasses>
+    <genClasses ecoreClass="WcoreDatabase.ecore#//Process">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//Process/variables"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//Process/startTask"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//Process/return"/>
+      <genOperations ecoreOperation="WcoreDatabase.ecore#//Process/containProcessSelectorTask">
+        <genParameters ecoreParameter="WcoreDatabase.ecore#//Process/containProcessSelectorTask/t"/>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false" ecoreClass="WcoreDatabase.ecore#//Task">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//Task/permissions"/>
+    </genClasses>
+    <genClasses ecoreClass="WcoreDatabase.ecore#//Permission">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WcoreDatabase.ecore#//Permission/permission"/>
+    </genClasses>
+    <genClasses ecoreClass="WcoreDatabase.ecore#//Variable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WcoreDatabase.ecore#//Variable/changeable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WcoreDatabase.ecore#//Variable/defaultValue"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//Variable/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WcoreDatabase.ecore#//Variable/scope"/>
+    </genClasses>
+    <genClasses ecoreClass="WcoreDatabase.ecore#//Create">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//Create/eClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//Create/return"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//Create/anchor"/>
+    </genClasses>
+    <genClasses ecoreClass="WcoreDatabase.ecore#//InvokeOperation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//InvokeOperation/context"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//InvokeOperation/operation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//InvokeOperation/arguments"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//InvokeOperation/return"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WcoreDatabase.ecore#//InvokeOperation/long"/>
+    </genClasses>
+    <genClasses ecoreClass="WcoreDatabase.ecore#//InvokeProcess">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//InvokeProcess/subProcess"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//InvokeProcess/arguments"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//InvokeProcess/return"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WcoreDatabase.ecore#//InvokeProcess/synchronized"/>
+    </genClasses>
+    <genClasses ecoreClass="WcoreDatabase.ecore#//InvokeGUI">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//InvokeGUI/outputAction"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//InvokeGUI/outputData"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//InvokeGUI/input"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//InvokeGUI/page"/>
+    </genClasses>
+    <genClasses ecoreClass="WcoreDatabase.ecore#//If">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//If/condition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//If/body"/>
+    </genClasses>
+    <genClasses ecoreClass="WcoreDatabase.ecore#//IfElse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//IfElse/elseBody"/>
+    </genClasses>
+    <genClasses ecoreClass="WcoreDatabase.ecore#//While"/>
+    <genClasses ecoreClass="WcoreDatabase.ecore#//Assign">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//Assign/lhs"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//Assign/rhs"/>
+    </genClasses>
+    <genClasses ecoreClass="WcoreDatabase.ecore#//Sequence">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//Sequence/body"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//Sequence/follower"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="WcoreDatabase.ecore#//Expression"/>
+    <genClasses ecoreClass="WcoreDatabase.ecore#//TerminalExpression">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//TerminalExpression/refers"/>
+    </genClasses>
+    <genClasses ecoreClass="WcoreDatabase.ecore#//UnaryExpression">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WcoreDatabase.ecore#//UnaryExpression/operator"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//UnaryExpression/rightExpression"/>
+    </genClasses>
+    <genClasses ecoreClass="WcoreDatabase.ecore#//BinaryExpression">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WcoreDatabase.ecore#//BinaryExpression/operator"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//BinaryExpression/leftExpressions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//BinaryExpression/rightExpression"/>
+    </genClasses>
+    <genClasses ecoreClass="WcoreDatabase.ecore#//Delete">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//Delete/object"/>
+    </genClasses>
+    <genClasses ecoreClass="WcoreDatabase.ecore#//Read">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//Read/object"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//Read/return"/>
+    </genClasses>
+    <genClasses ecoreClass="WcoreDatabase.ecore#//CrudGui">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//CrudGui/contain"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WcoreDatabase.ecore#//CrudGui/privileges"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//CrudGui/anchor"/>
+    </genClasses>
+    <genClasses ecoreClass="WcoreDatabase.ecore#//ProcessSelector">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//ProcessSelector/page"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference WcoreDatabase.ecore#//ProcessSelector/processes"/>
+      <genOperations ecoreOperation="WcoreDatabase.ecore#//ProcessSelector/containInvokeGUITask">
+        <genParameters ecoreParameter="WcoreDatabase.ecore#//ProcessSelector/containInvokeGUITask/t"/>
+      </genOperations>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

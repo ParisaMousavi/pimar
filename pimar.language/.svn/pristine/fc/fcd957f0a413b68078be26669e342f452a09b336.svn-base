@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/pimar.language/src" modelPluginID="pimar.language"
+    modelName="GcoreDatabase" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0" copyrightFields="false"
+    usedGenPackages="../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore" operationReflection="true"
+    importOrganizing="true">
+  <foreignModel>GcoreDatabase.ecore</foreignModel>
+  <genPackages prefix="GcoreDatabase" disposableProviderFactory="true" ecorePackage="GcoreDatabase.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="GcoreDatabase.ecore#//MenuStyle">
+      <genEnumLiterals ecoreEnumLiteral="GcoreDatabase.ecore#//MenuStyle/TILE"/>
+      <genEnumLiterals ecoreEnumLiteral="GcoreDatabase.ecore#//MenuStyle/GRID"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="GcoreDatabase.ecore#//ListStyle">
+      <genEnumLiterals ecoreEnumLiteral="GcoreDatabase.ecore#//ListStyle/GRID"/>
+      <genEnumLiterals ecoreEnumLiteral="GcoreDatabase.ecore#//ListStyle/LIST"/>
+    </genEnums>
+    <genClasses ecoreClass="GcoreDatabase.ecore#//PageContainer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference GcoreDatabase.ecore#//PageContainer/pages"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference GcoreDatabase.ecore#//PageContainer/menuablePages"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference GcoreDatabase.ecore#//PageContainer/menues"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference GcoreDatabase.ecore#//PageContainer/listablePages"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference GcoreDatabase.ecore#//PageContainer/styleSettings"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference GcoreDatabase.ecore#//PageContainer/selectablePages"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="GcoreDatabase.ecore#//Page">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GcoreDatabase.ecore#//Page/pageStyle"/>
+    </genClasses>
+    <genClasses ecoreClass="GcoreDatabase.ecore#//RGBColor">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute GcoreDatabase.ecore#//RGBColor/blue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute GcoreDatabase.ecore#//RGBColor/red"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute GcoreDatabase.ecore#//RGBColor/green"/>
+    </genClasses>
+    <genClasses ecoreClass="GcoreDatabase.ecore#//EditPage"/>
+    <genClasses ecoreClass="GcoreDatabase.ecore#//ListPage">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GcoreDatabase.ecore#//ListPage/menu"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GcoreDatabase.ecore#//ListPage/listablepageStyle"/>
+    </genClasses>
+    <genClasses ecoreClass="GcoreDatabase.ecore#//ViewPage">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GcoreDatabase.ecore#//ViewPage/menu"/>
+    </genClasses>
+    <genClasses ecoreClass="GcoreDatabase.ecore#//CustomPage"/>
+    <genClasses ecoreClass="GcoreDatabase.ecore#//LoginPage"/>
+    <genClasses ecoreClass="GcoreDatabase.ecore#//ProcessSelectorPage">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GcoreDatabase.ecore#//ProcessSelectorPage/menu"/>
+    </genClasses>
+    <genClasses ecoreClass="GcoreDatabase.ecore#//SelectableListPage">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GcoreDatabase.ecore#//SelectableListPage/listablepageStyle"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GcoreDatabase.ecore#//SelectableListPage/selectablepageStyle"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="GcoreDatabase.ecore#//ListablePage"/>
+    <genClasses image="false" ecoreClass="GcoreDatabase.ecore#//SelectablePage">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute GcoreDatabase.ecore#//SelectablePage/multiSelection"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="GcoreDatabase.ecore#//MenuablePage"/>
+    <genClasses ecoreClass="GcoreDatabase.ecore#//Menu">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GcoreDatabase.ecore#//Menu/menuStyle"/>
+    </genClasses>
+    <genClasses ecoreClass="GcoreDatabase.ecore#//StyleSetting">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference GcoreDatabase.ecore#//StyleSetting/rgbColors"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference GcoreDatabase.ecore#//StyleSetting/menuStyle"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference GcoreDatabase.ecore#//StyleSetting/selectionStyle"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference GcoreDatabase.ecore#//StyleSetting/pageStyle"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GcoreDatabase.ecore#//StyleSetting/fontColor"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GcoreDatabase.ecore#//StyleSetting/backColor"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference GcoreDatabase.ecore#//StyleSetting/listStyle"/>
+    </genClasses>
+    <genClasses ecoreClass="GcoreDatabase.ecore#//StylePageSettings">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute GcoreDatabase.ecore#//StylePageSettings/imagePosition"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute GcoreDatabase.ecore#//StylePageSettings/textPosition"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute GcoreDatabase.ecore#//StylePageSettings/frame"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GcoreDatabase.ecore#//StylePageSettings/frameColor"/>
+    </genClasses>
+    <genClasses ecoreClass="GcoreDatabase.ecore#//StyleListSettings">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute GcoreDatabase.ecore#//StyleListSettings/separatorShow"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute GcoreDatabase.ecore#//StyleListSettings/listStyle"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GcoreDatabase.ecore#//StyleListSettings/separatorColor"/>
+    </genClasses>
+    <genClasses ecoreClass="GcoreDatabase.ecore#//StyleMenuSettings">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute GcoreDatabase.ecore#//StyleMenuSettings/menuStyle"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute GcoreDatabase.ecore#//StyleMenuSettings/fixedMenu"/>
+    </genClasses>
+    <genClasses ecoreClass="GcoreDatabase.ecore#//StyleSelectionSettings">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GcoreDatabase.ecore#//StyleSelectionSettings/selectionColor"/>
+    </genClasses>
+    <genClasses ecoreClass="GcoreDatabase.ecore#//MapPage"/>
+    <genClasses ecoreClass="GcoreDatabase.ecore#//MediaPage"/>
+    <genClasses ecoreClass="GcoreDatabase.ecore#//ELearningPage">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GcoreDatabase.ecore#//ELearningPage/menu"/>
+    </genClasses>
+    <genClasses ecoreClass="GcoreDatabase.ecore#//TakePicturePage"/>
+    <genClasses ecoreClass="GcoreDatabase.ecore#//RecordAudioPage"/>
+    <genClasses ecoreClass="GcoreDatabase.ecore#//ARPage"/>
+  </genPackages>
+</genmodel:GenModel>
