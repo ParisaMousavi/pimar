@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: pimar.editor.textual.xwcore.ui
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: pimar.editor.textual.xwcore.ui; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: pimar.editor.textual.xwcore;visibility:=reexport,
+ org.eclipse.xtext.ui,
+ org.eclipse.ui.editors;bundle-version="3.5.0",
+ org.eclipse.ui.ide;bundle-version="3.5.0",
+ org.eclipse.xtext.ui.shared,
+ org.eclipse.ui,
+ org.eclipse.xtext.builder,
+ org.antlr.runtime,
+ org.eclipse.xtext.common.types.ui,
+ org.eclipse.xtext.ui.codetemplates.ui,
+ org.eclipse.compare,
+ org.eclipse.xtext.xbase.lib,
+ pimar.language;bundle-version="1.0.0",
+ org.junit;bundle-version="4.11.0"
+Import-Package: org.apache.log4j,
+ org.eclipse.xtext.xbase.lib
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: pimar.editor.textual.xwcore.ui.quickfix,
+ pimar.editor.textual.xwcore.ui.contentassist,
+ pimar.editor.textual.xwcore.ui.contentassist.antlr,
+ pimar.editor.textual.xwcore.ui.internal,
+ pimar.editor.textual.xwcore.ui.contentassist.antlr.internal
+Bundle-Activator: pimar.editor.textual.xwcore.ui.internal.XwcoreActivator
