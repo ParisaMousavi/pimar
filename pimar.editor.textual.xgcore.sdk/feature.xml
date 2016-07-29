@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="pimar.editor.textual.xgcore.sdk"
+	label="Xgcore SDK Feature "
+	version="1.0.0.qualifier">
+	<plugin
+			id="pimar.editor.textual.xgcore"
+			download-size="0"
+			install-size="0"
+			version="0.0.0"
+			unpack="false"/>
+	<plugin
+			id="pimar.editor.textual.xgcore.ui"
+			download-size="0"
+			install-size="0"
+			version="0.0.0"
+			unpack="false"/>
+</feature>
