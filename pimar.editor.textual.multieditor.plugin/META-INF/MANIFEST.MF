@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: PIMAR Textual Modeling Editor
+Bundle-SymbolicName: pimar.editor.textual.multieditor.plugin;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: pimar.editor.textual.multieditor.plugin.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.expressions;bundle-version="3.4.501",
+ org.eclipse.core.resources;bundle-version="3.8.101",
+ org.eclipse.jdt.core;bundle-version="3.9.2",
+ org.eclipse.ui.ide;bundle-version="3.9.2",
+ org.apache.log4j;bundle-version="1.2.15",
+ org.eclipse.ui.workbench,
+ org.eclipse.jface,
+ pimar.language;bundle-version="1.0.0",
+ pimar.language.editor;bundle-version="1.0.0",
+ org.eclipse.m2e.scm;bundle-version="1.4.0",
+ org.eclipse.xtext.ui;bundle-version="2.5.1",
+ org.eclipse.m2e.core;bundle-version="1.4.0",
+ org.eclipse.m2e.core.ui;bundle-version="1.4.0"
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: P. Moosavi Nezhad
+Import-Package: com.google.inject;version="1.4.0",
+ org.eclipse.ui.texteditor

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="popup:org.eclipse.jdt.ui.PackageExplorer">
+         <menu
+               id="pimar.modeling.editor.plugin.menus.openMenu"
+               label="PIMAR">
+            <command
+                  commandId="pimar.editor.textual.multieditor.plugin.openCommand"
+                  icon="icons/16x16/pimar_multipage_editor_16.png"
+                  id="Open Textual Model Editor">
+ 				<visibleWhen
+                     checkEnabled="false">
+                  <with
+                        variable="activeMenuSelection">
+                     <iterate
+                           ifEmpty="false"
+                           operator="or">
+                        <adapt
+                              type="org.eclipse.core.resources.IFolder">
+                           <test
+                                 forcePluginActivation="true"
+                                 property="pimar.editor.textual.multieditor.plugin.propertytesters.areModelsExisted"
+                                 value="true">
+                           </test>
+                        </adapt>
+                     </iterate>
+                  </with>
+               </visibleWhen>                  
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:org.eclipse.ui.main.toolbar">
+         <separator
+               name="pimar.editor.textual.multieditor.plugin.toolbarseparator"
+               visible="true">
+         </separator>
+         <toolbar
+               id="pimar.editor.textual.multieditor.plugin.toolbars.CreateTextualEditorFiles"
+               label="Create Textual Model Files">
+            <command
+                  commandId="pimar.editor.textual.multieditor.plugin.createTextualFilesCommand"
+                  icon="icons/16x16/pimar_multipage_new_wizard_16.png"
+                  label="Create Textual Model Files"
+                  style="push">
+            </command>
+         </toolbar>
+      </menuContribution>
+      <menuContribution
+            locationURI="popup:org.eclipse.ui.navigator.ProjectExplorer#PopupMenu">
+         <menu
+               label="PIMAR">
+            <command
+                  commandId="pimar.editor.textual.multieditor.plugin.openCommand"
+                  icon="icons/16x16/pimar_multipage_editor_16.png"
+                  id="Open Textual Model Editor">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            locationURI="popup:org.eclipse.ui.views.ResourceNavigator">
+         <menu
+               label="PIMAR">
+            <command
+                  commandId="pimar.editor.textual.multieditor.plugin.openCommand"
+                  icon="icons/16x16/pimar_multipage_editor_16.png"
+                  id="Open Textual Model Editor"
+                  style="push">
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            categoryId="pimar.modeling.editor.plugin.pimarcategory"
+            id="pimar.editor.textual.multieditor.plugin.openCommand"
+            name="Open Textual Model Editor">
+      </command>
+      <command
+            id="pimar.editor.textual.multieditor.plugin.createTextualFilesCommand"
+            name="Create Textual Model Files">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="pimar.editor.textual.multieditor.plugin.handlers.OpenPimarHandler"
+            commandId="pimar.editor.textual.multieditor.plugin.openCommand">
+      </handler>
+      <handler
+            class="pimar.editor.textual.multieditor.plugin.handlers.CreateTextualFilesHandler"
+            commandId="pimar.editor.textual.multieditor.plugin.createTextualFilesCommand">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.core.expressions.propertyTesters">
+      <propertyTester
+            class="pimar.editor.textual.multieditor.plugin.propertytesters.ModelFilesTester"
+            id="pimar.editor.textual.multieditor.plugin.modelFilesTester"
+            namespace="pimar.editor.textual.multieditor.plugin.propertytesters"
+            properties="areModelsExisted"
+            type="org.eclipse.core.resources.IFolder">
+      </propertyTester>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="pimar.editor.textual.multieditor.plugin.editors.PimarTextualMultiEditor"
+            contributorClass="pimar.editor.textual.multieditor.plugin.editors.PimarTextualMultiEditorContributor"
+            default="false"
+            extensions="xcore, xgcore, xwcore"
+            filenames="xcore, xgcore, xwcore"
+            icon="icons/16x16/pimar_multipage_editor_16.png"
+            id="pimar.editor.textual.multieditor.plugin.editors.PimarTextualMultiEditor"
+            matchingStrategy="pimar.editor.textual.multieditor.plugin.editors.PimarTextualMultiEditorMatchingStrategy"
+            name="Pimar Textual Editor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="pimar.modeling.editor.plugin"
+            name="PIMAR">
+      </category>
+      <wizard
+            category="pimar.modeling.editor.plugin"
+            class="pimar.editor.textual.multieditor.plugin.wizards.PimarNewTextualEditorWizard"
+            icon="icons/16x16/pimar_multipage_new_wizard_16.png"
+            id="pimar.editor.textual.multieditor.plugin.wizards.PimarNewTextualEditorWizard"
+            name="Create Textual Model Files">
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.popupMenus">
+   
+      <!--
+      NOW WE HAVE CLASSPATH MENU CONTRIBUTIONS
+       -->
+      <objectContribution id="org.eclipse.m2e.classpathMenu"
+                          objectClass="org.eclipse.jdt.core.IPackageFragmentRoot"
+                          adaptable="true">
+		<menu
+            id="org.eclipse.m2e.classpathMenu" 
+            path="additions" 
+            label="PIMAR"> 
+            <groupMarker name="open"/>
+            <separator name="org.eclipse.m2e.core.separator2"/>
+         </menu>  
+      </objectContribution>
+      
+      
+      <objectContribution id="org.eclipse.m2e.classpathMenu.openTextualModelEditor"
+                          objectClass="org.eclipse.jdt.core.IPackageFragmentRoot"
+                          adaptable="true">
+         <action
+               class="pimar.editor.textual.multieditor.plugin.actions.OpenTextualModelEditor"
+               enablesFor="+"
+               icon="icons/16x16/pimar_multipage_editor_16.png"
+               id="org.eclipse.m2e.openTextualModelEditor"
+               label="Open Textual Model Editor"
+               menubarPath="org.eclipse.m2e.classpathMenu/open"
+               style="push"/>
+         <enablement>
+         	<test property="org.eclipse.m2e.hasArtifactKey"/>
+         </enablement>
+      </objectContribution>        
+
+      <!--
+      NOW WE HAVE CLASSPATH MENU WRAPPER CONTRIBUTIONS
+       -->
+      
+      
+      
+   
+      
+         
+    </extension>
+
+</plugin>
