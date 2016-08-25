@@ -31,8 +31,7 @@ public class PimarTextualMultiEditorContributor extends
 	private IEditorPart activeEditorPart;
 
 	public PimarTextualMultiEditorContributor() {
-//		super();
-//		createActions();
+		super();
 	}
 
 
@@ -86,41 +85,25 @@ public class PimarTextualMultiEditorContributor extends
 		}
 	}
 	
-	private void createActions() {
-		sampleAction = new Action() {
-			public void run() {
-				MessageDialog.openInformation(null, "Example", "Sample Action Executed");
-			}
-		};
-		sampleAction.setText("Sample Action");
-		sampleAction.setToolTipText("Sample Action tool tip");
-		sampleAction.setImageDescriptor(PlatformUI.getWorkbench().getSharedImages().
-				getImageDescriptor(IDE.SharedImages.IMG_OBJS_TASK_TSK));
-	}
 	
 	@Override
 	public void contributeToMenu(IMenuManager manager) {
-//		IMenuManager menu = new MenuManager("Editor &Menu");
-//		manager.prependToGroup(IWorkbenchActionConstants.MB_ADDITIONS, menu);
-//		menu.add(sampleAction);
+
 	}
 
 	@Override
 	public void contributeToStatusLine(IStatusLineManager statusLineManager) {
-		// TODO Auto-generated method stub
-		// super.contributeToStatusLine(statusLineManager);
+
 	}
 
 	@Override
 	public void contributeToToolBar(IToolBarManager manager) {
-//		manager.add(new Separator());
-//		manager.add(sampleAction);
+
 	}
 
 	@Override
 	public void contributeToCoolBar(ICoolBarManager coolBarManager) {
-		// TODO Auto-generated method stub
-		// super.contributeToCoolBar(coolBarManager);
+
 	}
 
 	@Override
@@ -152,9 +135,7 @@ public class PimarTextualMultiEditorContributor extends
 		contributeToStatusLine(bars.getStatusLineManager());
 	}
 
-//	protected IAction getAction(ITextEditor editor, String actionID) {
-//		return (editor == null ? null : editor.getAction(actionID));
-//	}
+
 	
 	@Override
 	public IActionBars getActionBars() {
@@ -174,43 +155,6 @@ public class PimarTextualMultiEditorContributor extends
 	 */
 	@Override
 	public void setActiveEditor(IEditorPart part) {
-//		System.out.println(" >>> setActiveEditor");
-//		if (activeEditorPart == part)
-//			return;
-//		activeEditorPart = part;
-//		IActionBars actionBars = getActionBars();
-//		if (actionBars != null) {
 
-//			ITextEditor editor = (part instanceof ITextEditor) ? (ITextEditor) part : null;
-//
-//			actionBars.setGlobalActionHandler(
-//				ActionFactory.DELETE.getId(),
-//				getAction(editor, ITextEditorActionConstants.DELETE));
-//			actionBars.setGlobalActionHandler(
-//				ActionFactory.UNDO.getId(),
-//				getAction(editor, ITextEditorActionConstants.UNDO));
-//			actionBars.setGlobalActionHandler(
-//				ActionFactory.REDO.getId(),
-//				getAction(editor, ITextEditorActionConstants.REDO));
-//			actionBars.setGlobalActionHandler(
-//				ActionFactory.CUT.getId(),
-//				getAction(editor, ITextEditorActionConstants.CUT));
-//			actionBars.setGlobalActionHandler(
-//				ActionFactory.COPY.getId(),
-//				getAction(editor, ITextEditorActionConstants.COPY));
-//			actionBars.setGlobalActionHandler(
-//				ActionFactory.PASTE.getId(),
-//				getAction(editor, ITextEditorActionConstants.PASTE));
-//			actionBars.setGlobalActionHandler(
-//				ActionFactory.SELECT_ALL.getId(),
-//				getAction(editor, ITextEditorActionConstants.SELECT_ALL));
-//			actionBars.setGlobalActionHandler(
-//				ActionFactory.FIND.getId(),
-//				getAction(editor, ITextEditorActionConstants.FIND));
-//			actionBars.setGlobalActionHandler(
-//				IDEActionFactory.BOOKMARK.getId(),
-//				getAction(editor, IDEActionFactory.BOOKMARK.getId()));
-//			actionBars.updateActionBars();
-//		}
 	}
 }
