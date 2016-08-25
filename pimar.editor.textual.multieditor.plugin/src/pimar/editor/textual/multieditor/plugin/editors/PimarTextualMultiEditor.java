@@ -342,13 +342,13 @@ public class PimarTextualMultiEditor extends MultiEditor implements
 	}
 
 	protected void updateActionBarContributor(int pageIndex) {
-		IEditorActionBarContributor contributor = getInnerEditors()[pageIndex]
-				.getEditorSite().getActionBarContributor();
-		if (contributor != null
-				&& contributor instanceof IEditorActionBarContributor) {
-			((IEditorActionBarContributor) contributor)
-					.setActiveEditor(getInnerEditors()[pageIndex]);
-		}
+//		IEditorActionBarContributor contributor = getInnerEditors()[pageIndex]
+//				.getEditorSite().getActionBarContributor();
+//		if (contributor != null
+//				&& contributor instanceof IEditorActionBarContributor) {
+//			((IEditorActionBarContributor) contributor)
+//					.setActiveEditor(getInnerEditors()[pageIndex]);
+//		}
 	}
 
 	public void partActivated(IWorkbenchPartReference partRef) {

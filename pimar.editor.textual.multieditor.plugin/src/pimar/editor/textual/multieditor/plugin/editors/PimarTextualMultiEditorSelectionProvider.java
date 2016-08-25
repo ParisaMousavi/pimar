@@ -30,7 +30,11 @@ public class PimarTextualMultiEditorSelectionProvider implements IPostSelectionP
 	public void fireSelectionChanged(final SelectionChangedEvent event) {
 		System.out.println("PIMAR TME: fireSelectionChanged.");
 		Object[] listeners = this.listeners.getListeners();
+		if(listeners != null)
+		{
+			System.out.println("listener is not null");
 		fireEventChange(event, listeners);
+		}
 	}
 
 	private void fireEventChange(final SelectionChangedEvent event,
